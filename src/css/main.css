@@ -1,0 +1,55 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-md-6 {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.btn {
+    display: none;
+    margin: 0 auto;
+}
+
+#contactRow {
+    display: none;
+}
+
+#fileChooser {
+    position: absolute;
+    top:-100px;
+}
+
+#mapCanvas {
+    width: 320px;
+    height: 200px;
+}
+
+#photo {
+    width: 320px;
+    display: none;
+}
+
+#spinnerMask {
+    display: none;
+    position: fixed;
+    z-index: 20000;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    opacity: 0.6;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+
+        <script src="../js/vendor/modernizr-2.8.1-custom.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 id="type"></h1>
+                <img id="photo" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="mapCanvas"></div>
+            </div>
+        </div>
+
+        <div class="row" id="contactRow">
+            <div class="col-md-6" style="text-align: left;">
+                <div><strong>Name:</strong> <span id="name"></span></div>
+                <div><strong>Email:</strong> <span id="email"></span></div>
+                <div><strong>Phone:</strong> <span id="phone"></span></div>
+            </div>
+        </div>
+        <hr>
+
+      <footer>
+        <p>Spokane Edible Tree Project</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script type='text/javascript' src='//cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDSYxazhE92Wf597_-1gymeWIXByJcbb4Y&sensor=true"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
+        <script src="../js/photo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.1-custom.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="spinnerMask"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div><img src="http://spokaneedibletreeproject.org/img/logo.png" class="logo"  /></div>
+                <h3>TREE SCOUTING</h3>
+                <input type="file" id="fileChooser" style="position:absolute; top:-100px;" />
+
+                <button id="fileChooserButton" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-camera"></span> Take Picture</button>
+
+                <div id="type" style="display:none;">
+                    <p>What kind of tree is this?</p>
+                    <select class="form-control" id="selectType">
+                        <option value=""></option>
+                        <option>apple</option>
+                        <option>apricot</option>
+                        <option>cherry</option>
+                        <option>crab apple</option>
+                        <option>hazlenut</option>
+                        <option>nectarine</option>
+                        <option>peach</option>
+                        <option>pear</option>
+                        <option>plum</option>
+                        <option>walnut</option>
+                        <option>black walnut</option>
+                        <option>shrub (berries)</option>
+                        <option>I don't know/not sure</option>
+                    </select>
+                </div>
+
+                <button id="location" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-globe"></span> Get Location</button>
+                <!--<button id="sameLocation" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-globe"></span> Use Same Location</button>-->
+                <button id="new" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-repeat"></span> Register Another Tree</button>
+            </div>
+        </div>
+        <div class="row" id="contactRow">
+            <div class="col-md-6">
+                <div id="mapCanvas"></div>
+                <p>If the tree is on private property, fill out as many of these fields as you can.</p>
+                <div class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label for="input-name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="input-email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-phone" class="col-sm-2 control-label">Phone</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="(509) 555-1212">
+                        </div>
+                    </div>
+                </div>
+
+                <button id="submit" class="btn btn-default btn-lg" style="display:block;"><span class="glyphicon glyphicon-tree-conifer"></span> Finish Registration</button>
+
+            </div>
+        </div>
+        <hr>
+
+      <footer>
+        <p>Spokane Edible Tree Project</p>
+      </footer>
+    </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script type='text/javascript' src='//cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDSYxazhE92Wf597_-1gymeWIXByJcbb4Y&sensor=true"></script>
+        <script src="//sdk.amazonaws.com/js/aws-sdk-2.0.0-rc10.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/spin.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
